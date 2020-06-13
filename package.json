@@ -15,7 +15,8 @@
     "build": "webpack --config webpack.config.prod.js",
     "postbuild": "run-p serve:build",
     "serve:build": "http-server ./build",
-    "depoly:docs": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "setupFiles": [
