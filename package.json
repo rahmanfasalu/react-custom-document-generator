@@ -1,6 +1,7 @@
 {
   "name": "ps-redux",
   "description": "React and Redux starter kit",
+  "homepage": "http://rahmanfasalu.github.io/react-custom-document-generator/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:dev gen:docs-watch",
@@ -25,7 +26,6 @@
       "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
     }
   },
-  "homepage": "http://rahmanfasalu.github.io/react-custom-document-generator",
   "dependencies": {
     "bootstrap": "4.5.0",
     "immer": "6.0.9",
