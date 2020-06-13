@@ -13,7 +13,8 @@
     "prebuild": "run-p clean:build",
     "build": "webpack --config webpack.config.prod.js",
     "postbuild": "run-p serve:build",
-    "serve:build": "http-server ./build"
+    "serve:build": "http-server ./build",
+    "depoly:docs": "gh-pages -d build"
   },
   "jest": {
     "setupFiles": [
@@ -53,6 +54,7 @@
     "eslint-plugin-import": "2.21.2",
     "eslint-plugin-react": "7.20.0",
     "fetch-mock": "9.10.1",
+    "gh-pages": "^3.0.0",
     "html-webpack-plugin": "4.3.0",
     "http-server": "0.12.3",
     "jest": "26.0.1",
